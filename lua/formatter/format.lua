@@ -98,7 +98,7 @@ function M.start_task(configs, start_line, end_line, opts)
 
     if event == "exit" then
       if tempfiles[job_id] ~= nil then
-        os.remove(tempfiles[job_id])
+        -- os.remove(tempfiles[job_id])
       end
       -- Data is exit code here
       -- Failed to run, stop the loop
